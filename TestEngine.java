@@ -1,16 +1,12 @@
 package com.jse.app;
 
-import java.util.Random;
 import java.util.Scanner;
 
-public class Engine {
+public class TestEngine {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		while (true) { // 무한 Loop - 서버
-			System.out.println("0 : 종료, "
-					+ "1 : 가위바위보, "
-					+ "2 : 주사위 맞추기 게임"
-					+ "3 : 1부터 100까지의 합");
+		while(true) {
+			System.out.println("0 : 종료, 1 : 가위바위보, 2 : 홀짝, 3 : 합계");
 			int flag = sc.nextInt();
 			switch(flag) {
 			case 0: System.out.println("종료"); return;
@@ -18,6 +14,6 @@ public class Engine {
 			case 2: Dice2.switchDice(); break;
 			case 3: Sum1To5.sum(); break;
 			}
-		} 
+		}
 	}
 }

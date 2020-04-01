@@ -26,6 +26,7 @@ public class RPS {
 		case 1: computer = "가위(1)"; break;
 		case 2: computer = "바위(2)"; break;
 		case 3: computer = "보(3)"; break;
+		}
 		System.out.println("컴퓨터 : "+computer);
 		
 		String end = "무승부";
@@ -47,5 +48,6 @@ public class RPS {
 			case 2: end="승리"; break;
 			}
 		}
+		System.out.println(end);
 	}
 }
