@@ -5,8 +5,6 @@ import java.util.Scanner;
 public class Dice2 {
 	public static void main(String[] args) {
 		switchDice();
-		dice();
-
 	}
 	
 	
@@ -38,29 +36,6 @@ public class Dice2 {
 		System.out.println(end);
 		
 		
-	}
-	
-	static void dice() {
-		System.out.println("----------\n두번째 주사위 홀/짝 맞추기 게임");
-		System.out.println("기대하는 홀/짝을 입력해주세요.");
-		Scanner scanner = new Scanner(System.in);
-		String expect = scanner.next();
-		System.out.println("사용자 예상값 : "+expect);
-		Random random = new Random();
-		int dice = random.nextInt(6)+1;
-		System.out.println("주사위 값 : "+dice);
-		String result = "";
-		if(dice%2==1) {
-		result = "홀";
-		}else{
-		result = "짝";
-		}	
-		System.out.println("홀/짝 결과 : "+result);
-		if(expect.equals(result)) { // object type 의 opepration은 method로 처리한다.
-		System.out.println("매칭 결과 : 맞음\n----------");
-		}else {
-		System.out.println("매칭 결과 : 틀림\n----------");
-		}
 	}
 
 }

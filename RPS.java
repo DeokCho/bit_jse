@@ -4,10 +4,8 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class RPS {
-	public static void main(String[] args) {
-		game();
-	}
-	static void game(){
+	
+	public void game(){
 		System.out.println("가위(1), 바위(2), 보(3) 을 입력하세요.");
 		Scanner sc = new Scanner(System.in);
 		int st = sc.nextInt();
